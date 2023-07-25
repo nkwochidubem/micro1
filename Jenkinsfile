@@ -6,5 +6,12 @@ pipeline {
         echo "hello from micro1 Jenkinsfile"
      }
     }
+    stage('test') {
+      steps {
+        sh '''
+        cat *
+        '''
+      }
+    }
   }
 }
