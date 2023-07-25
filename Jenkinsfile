@@ -6,15 +6,6 @@ pipeline {
         echo "hello from micro1 Jenkinsfile"
      }
     }
-<<<<<<< HEAD
-    stage('test') {
-      steps {
-        sh '''
-        cat *
-        '''
-      }
-    }
-=======
     stage('For fix branch'){
      when {
          branch "fix-*"
@@ -34,6 +25,5 @@ pipeline {
      }
    }
 
->>>>>>> 3d5e5310b54c962ce27ff959980ef2ea39910238
   }
 }
