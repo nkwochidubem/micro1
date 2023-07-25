@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
-        echo "hello from micro1 Jenkinsfile"
+        sh '''
+          echo "hello from micro1 Jenkinsfile"
+          cat *
+        '''
      }
     }
     stage('For fix branch'){
